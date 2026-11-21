@@ -323,7 +323,7 @@ export default function Booking({ selectedGameId, onGameChange }: BookingProps) 
                     session.
                   </p>
                 ) : (
-                  <div className="mt-3 grid grid-cols-1 gap-2">
+                  <div className="mt-3 grid max-h-64 grid-cols-1 gap-2 overflow-y-auto pr-1 sm:max-h-72">
                     {availableSessions.map((session) => {
                       const isSelected = startHour === session.startHour;
                       return (
